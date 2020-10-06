@@ -31,7 +31,7 @@ function optionChanged(newSample) {
   buildMetadata(newSample);
   buildCharts(newSample);
   bubblechart(newSample);
-  gaugechart(newsample)
+  gaugechart(newSample)
   
 }
 
