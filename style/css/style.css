@@ -1,0 +1,33 @@
+.jumbotron{
+    background-image: url('../../image/Bacteria2020.jpg');
+    color: chocolate;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+p {
+    color:black;
+}
+
+.container {
+    background-color: honeydew;
+}
+
+.col-ml-11{
+    margin-left:5%;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav {
+    font-size: Large;
+}
+
+button {
+
+    margin-bottom: 10px;
+
+}

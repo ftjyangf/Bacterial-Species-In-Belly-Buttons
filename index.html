@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='stylesheet' href='style/css/style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +20,24 @@
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
-    </div>
-    <div class="row">
+    
+      
+
+<nav class = 'class="navbar navbar-expand-lg navbar-light bg-light"'>
+   <label for ='navbar-toggler'>Nav to Chart</label>
+   <div class='collapse navbar-collapse' id='navbarNav'>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bubble" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <a class ='nav-link' href='#bubble'>Bubble Chart</a>
+    </button>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <a class ='nav-link' href='#bar'>Bar & Gauge chart</a>
+    </button>   
+         
+        
+   </div>
+
+   <div class="row">
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
@@ -33,19 +52,44 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <div id="bar"></div> 
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
-      </div>
+        
+      </div>   
     </div>
+
     <div class="row">
-      <div class="col-md-12">
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-5">
+      <h3>This graph visualize the top 10 bacterial per number,the yxias shows
+        the id of the backerial for simplify purpose, the xaxis show the number of backerial for different
+        material. 
+      </h3>
+    </div>
+    <div class="col-md-5">
+      <h3>This gauge chart shows the frequery of test sample washing belly botton per week.
+        the range of the gauge chart is 0-10.
+      </h3>
+    </div>
+  </div>
+    <div class="row">
+      <div class = "col-md-1"></div>
+      <div class="col-md-10">
         <div id="bubble"></div>
+        <h3>This bubble chart uses the id of backerial as the axis, the number of each backerial can be
+          easily found in yxias, the infomal of the backerial label/ the name of backerial can be easily found by
+          hover the cursoron the point interested, the color is divided into 10 different color 
+          by divide the range of id into 10 parts, each parts is refered by different color. for example 1-350 is represent
+          by the purple or lightpurple color. the size of the circle also indicates the number of bacterial
+        </h3>
       </div>
     </div>
   </div>
-
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="charts.js"></script>
